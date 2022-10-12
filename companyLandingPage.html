@@ -17,6 +17,12 @@
 		  	height: 600px;
 		  }
 		}
+		.form{
+			position: absolute;
+		    right: 35%;
+		    left: 35%;
+		    bottom: 35%;
+		}
 		.gray{
 			color:gray;
 		}
@@ -44,12 +50,11 @@
 			position:absolute;
 		    right: 0;
 		    bottom: 44%;
-		    
 		}
 		.owl-dots{
 		    position: absolute;
-		    right: 35%;
-		    left: 35%;
+		    right: 20%;
+		    left: 20%;
 		    bottom: 2%;
 		}
 		.big{
@@ -60,7 +65,10 @@
 			height: 100px;
 			object-position: 100% 100%;
 		}
-		
+		.cimg {
+			position: relative;
+		  	z-index: -1;
+		}
 </style>
 
 </head>
@@ -95,9 +103,33 @@
 	  </div>
 	</nav>
 	<div class="owl-carousel owl-theme">
-	    <div class="item helim"><img src="img1.jpeg" alt="cloud" ></div>
-	    <div class="item helim"><img src="img2.jpeg" alt="mountain" ></div>
-	    <div class="item helim"><img src="img3.jpeg" alt="forest" ></div>
+	    <div class="item helim">
+	    	<img src="img1.jpeg" alt="cloud" >
+	    	<div class="owl-dots "  style="bottom: 38%;color: white;">
+	    		<h1>WE ARE EXPERTS</h1>
+	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
+	    		<br>
+	    		<button type="button" class="btn btn-warning " id="button1">READ MORE</button>
+	    	</div>
+	    </div>
+	    <div class="item helim">
+	    	<img src="img2.jpeg" alt="mountain" >
+	    	<div class="owl-dots "  style="bottom: 38%;color: white;">
+	    		<h1>WE ARE EXPERTS</h1>
+	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
+	    		<br>
+	    		<button type="button" class="btn btn-warning " id="button2">READ MORE</button>
+	    	</div>
+	    </div>
+	    <div class="item helim">
+	    	<img src="img3.jpeg" alt="forest" >
+	    	<div class="owl-dots "  style="bottom: 38%;color: white;">
+	    		<h1>WE ARE EXPERTS</h1>
+	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
+	    		<br>
+	    		<button type="button" class="btn btn-warning " id="button3">READ MORE</button>
+	    	</div>
+	    </div>
 	</div>
 	<br>
 	<div class="container-fluid">
@@ -189,29 +221,53 @@
 		<br>
 	</div>
 	<br>
-
-
-	<div class="container">
-		<form style="width:50%;margin: 0 auto;">
+	<div class="container "id="myDiv">
+		<form id="form" style="width:50%;margin: 0 auto;">
 			<div class="mb-3">
-				<label for="exampleInputEmail1" class="form-label">Full Name</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<label for="iname" class="form-label">Full Name</label>
+				<input id="iname" class="form-control" name="name" type="text" required style="width:100%">
 			</div>
 			<div class="mb-3">
-				<label for="exampleInputEmail1" class="form-label">Contact</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<label for="icont" class="form-label">Contact</label>
+				<input id="icont" class="form-control" type="number" name="number" minlength="10" required style="width:100%">
 			</div>
 			<div class="mb-3">
-				<label for="exampleInputEmail1" class="form-label">Email Address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<label for="iemail" class="form-label">Email Address</label>
+				<input id="iemail" class="form-control" type="email" name="email" required style="width:100%">
 			</div>
 			<div class="mb-3">
-				<label for="exampleInputPassword1" class="form-label">Date of Performance</label>
-				<input type="password" class="form-control" id="exampleInputPassword1">
+				<label for="icont" class="form-label">Age</label>
+				<input id="iage" class="form-control" type="number" name="number" min="18" required style="width:100%">
 			</div>
-			<button type="submit" class="btn btn-danger">Submit</button>
+			<div class="mb-3">
+				<label for="idate" class="form-label">Date of Performance</label>
+				<input type="date" class="form-control" id="idate" style="width:100%" required>
+			</div>
+			<button type="submit" class="btn btn-success">Submit</button>
 		</form>
 	</div>
+	<br>
+
+
+
+	<footer>
+  	<!--dropbox for language-->
+  	<div class="container-fluid bg-gray" style="height: 100px;">
+		<div>
+			<br>
+		  	<div class="dropdown">
+		  		<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" value="English" aria-expanded="false">
+				    Language
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">English</a></li>
+					<li><a class="dropdown-item" href="#">Hindi</a></li>
+					<li><a class="dropdown-item" href="#">Marathi</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  </footer>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -221,6 +277,21 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<script type="text/javascript">
+		$("#button1").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#myDiv").offset().top
+		    }, 100);
+		});
+		$("#button2").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#myDiv").offset().top
+		    }, 100);
+		});
+		$("#button3").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#myDiv").offset().top
+		    }, 100);
+		});
 		$('.owl-carousel').owlCarousel(
 		{
 			items : 1,
@@ -231,6 +302,7 @@
 		    navText : ['<h1 class="navftsz"><</h1>','<h1 class="navftsz">></h1>'],
 		});
 	</script>
+	
 
 </body>
 
