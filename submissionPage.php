@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -128,23 +127,23 @@
 		<table>
 			<tr>
 				<td>Name:</td>
-				<td><?php echo $_GET["name"]; ?></td>
+				<td><?php echo $_POST["name"]; ?></td>
 			</tr>
 			<tr>
 				<td>Contact:</td>
-				<td><?php echo $_GET["cont"]; ?></td>
+				<td><?php echo $_POST["cont"]; ?></td>
 			</tr>
 			<tr>
 				<td>Email:</td>
-				<td><?php echo $_GET["email"]; ?></td>
+				<td><?php echo $_POST["email"]; ?></td>
 			</tr>
 			<tr>
 				<td>Age:</td>
-				<td><?php echo $_GET["age"]; ?></td>
+				<td><?php echo $_POST["age"]; ?></td>
 			</tr>
 			<tr>
 				<td>Date of Performance:</td>
-				<td><?php echo $_GET["date"]; ?></td>
+				<td><?php echo $_POST["date"]; ?></td>
 			</tr>
 		</table>
 	</div>
