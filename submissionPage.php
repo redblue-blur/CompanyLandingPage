@@ -72,6 +72,21 @@
 			position: relative;
 		  	z-index: -1;
 		}
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: center;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
 </style>
 
 </head>
@@ -105,174 +120,53 @@
 	    </div>
 	  </div>
 	</nav>
-	<div class="owl-carousel owl-theme">
-	    <div class="item helim">
-	    	<img src="img1.jpeg" alt="cloud" >
-	    	<div class="owl-dots "  style="bottom: 38%;color: white;">
-	    		<h1>WE ARE EXPERTS</h1>
-	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
-	    		<br>
-	    		<button type="button" class="btn btn-warning " id="button1">READ MORE</button>
-	    	</div>
-	    </div>
-	    <div class="item helim">
-	    	<img src="img2.jpeg" alt="mountain" >
-	    	<div class="owl-dots "  style="bottom: 38%;color: white;">
-	    		<h1>WE ARE EXPERTS</h1>
-	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
-	    		<br>
-	    		<button type="button" class="btn btn-warning " id="button2">READ MORE</button>
-	    	</div>
-	    </div>
-	    <div class="item helim">
-	    	<img src="img3.jpeg" alt="forest" >
-	    	<div class="owl-dots "  style="bottom: 38%;color: white;">
-	    		<h1>WE ARE EXPERTS</h1>
-	    		<p> sgcfvjbj,kg jygyjfv gygyjvyv jjyfkdtd </p>
-	    		<br>
-	    		<button type="button" class="btn btn-warning " id="button3">READ MORE</button>
-	    	</div>
-	    </div>
-	</div>
-	<br>
-	<div class="container-fluid">
-		<h1 class="text-center">OUR <span class="green">ADVANTAGES</span></h1>
-		<p class="gray text-center"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-		<div class="row d-flex justify-content-evenly">
-	  		<div class="col-md-2 text-center">
-				<img src="ic1.png" class="card-img-top star " alt="star">
-				<br>
-				<br>
-			   	<h4>INNOVATION</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-	  		</div>
-	  		<div class="col-md-2 text-center">
-				<img src="ic2.png" class="card-img-top star " alt="star">
-				<br>
-				<br>
-			   	<h4>QUALITY</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-	  		</div>
-	  		<div class="col-md-2 text-center">
-				<img src="ic3.png" class="card-img-top star  " alt="star">
-				<br>
-				<br>
-			   	<h4>EXPERIENCE</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-	  		</div>
-	  		<div class="col-md-2 text-center">
-				<img src="ic4.png" class="card-img-top star " alt="star">
-				<br>
-				<br>
-			   	<h4>HAPPY CLIENT</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-	  		</div>
-	  		<div class="col-md-2 text-center">
-				<img src="ic5.png" class="card-img-top star  " alt="star">
-				<br>
-				<br>
-			   	<h4>SUPPORT</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-	  		</div>
-		</div>
-	</div>
-	<br>
 
 
-	<div class="container-fluid bg-gray">
-		<br>
-		<h1 class="text-center">OUR <span class="green">SERVICES</span></h1>
-		<p class="gray text-center"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-		<div class="row ">
-	  		<div class="col-md-3 text-center">
-				<img src="staric.jpg" class="card-img-top  star " alt="star">
-				<br>
-				<br>
-			   	<h4>WEB DESIGN</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-			   	<br>
-			   	<a class="green" href="url">Read More</a>
-	  		</div>
-	  		<div class="col-md-3 text-center">
-				<img src="staric.jpg" class="card-img-top  star " alt="star">
-				<br>
-				<br>
-			   	<h4>GRAPHIC DESIGN</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-			   	<br>
-			   	<a class="green" href="url">Read More</a>
-	  		</div>
-	  		<div class="col-md-3 text-center">
-				<img src="staric.jpg" class="card-img-top  star " alt="star">
-				<br>
-				<br>
-			   	<h4>BRANDING</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-			   	<br>
-			   	<a class="green" href="url">Read More</a>
-	  		</div>
-	  		<div class="col-md-3 text-center">
-				<img src="staric.jpg" class="card-img-top  star " alt="star">
-				<br>
-				<br>
-			   	<h4>MARKETING</h4>
-			   	<p class="gray"> cyrcsax kqdhwudb oidwid.qmd qdnwlkdn</p>
-			   	<br>
-			   	<a class="green" href="url">Read More</a>
-	  		</div>
-		</div>
-		<br>
-	</div>
-	<br>
-	<div class="container-sm "id="myDiv">
-		<form id="myform" style="width:50%; margin: 0 auto;" action="submissionPage.php" method="get">
-			<div class="mb-0">
-				<label for="name" class="form-label">Full Name</label>
-				<input id="name" class="form-control" name="name" type="text" style="width:100%">
-			</div>
-			<br>
-			<div class="mb-0">
-				<label for="cont" class="form-label">Contact</label>
-				<input id="cont" class="form-control" type="number" name="cont" style="width:100%">
-			</div><br>
-			<div class="mb-0">
-				<label for="email" class="form-label">Email Address</label>
-				<input id="email" class="form-control" type="email" name="email"style="width:100%">
-			</div><br>
-			<div class="mb-0">
-				<label for="age" class="form-label">Age</label>
-				<input id="age" class="form-control" type="number" name="age" style="width:100%">
-			</div><br>
-			<div class="mb-0">
-				<label for="date" class="form-label">Date of Performance</label>
-				<input type="date" class="form-control" id="date" name="date" style="width:100%" >
-			</div><br>
-			<!-- <a type="submit" class="btn btn-success" value="Submit" href="submissionPage.html">submit</a> -->
-			<input type="submit" class="btn btn-success" value="Submit">
-		</form>
-	</div>
-	<br>
+	<div class="container" style="text-align: center;">
+		<h1>Thankyou for visiting</h1>
 
-
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><?php echo $_GET["name"]; ?></td>
+			</tr>
+			<tr>
+				<td>Contact:</td>
+				<td><?php echo $_GET["cont"]; ?></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><?php echo $_GET["email"]; ?></td>
+			</tr>
+			<tr>
+				<td>Age:</td>
+				<td><?php echo $_GET["age"]; ?></td>
+			</tr>
+			<tr>
+				<td>Date of Performance:</td>
+				<td><?php echo $_GET["date"]; ?></td>
+			</tr>
+		</table>
+	</div>
 
 	<footer>
-  	<!--dropbox for language-->
-  	<div class="container-fluid bg-gray" style="height: 100px;">
-		<div>
-			<br>
-		  	<div class="dropdown">
-		  		<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" value="English" aria-expanded="false">
-				    Language
-				</button>
-				<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="#">English</a></li>
-					<li><a class="dropdown-item" href="#">Hindi</a></li>
-					<li><a class="dropdown-item" href="#">Marathi</a></li>
-				</ul>
+	  	<!--dropbox for language-->
+	  	<div class="container-fluid bg-gray" style="height: 100px;">
+			<div>
+				<br>
+			  	<div class="dropdown">
+			  		<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" value="English" aria-expanded="false">
+					    Language
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">English</a></li>
+						<li><a class="dropdown-item" href="#">Hindi</a></li>
+						<li><a class="dropdown-item" href="#">Marathi</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-  </footer>
+	</footer>
 
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
