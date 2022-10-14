@@ -110,10 +110,10 @@
 			  		<a class="nav-link gray" href="#">ABOUT</a>
 				</li>
 				<li class="nav-item">
-			  		<a class="nav-link gray" href="#">SERVICES</a>
+			  		<a class="nav-link gray" href="#">SIGN UP</a>
 				</li>
 				<li class="nav-item">
-			  		<a class="nav-link gray" href="#">CONTACT US</a>
+			  		<a class="nav-link gray" href="companyLogin.php">LOG IN</a>
 				</li>
 			</ul>
 	    </div>
@@ -201,40 +201,39 @@
 		    autoHeight:true,
 		    navText : ['<h1 class="navftsz"><</h1>','<h1 class="navftsz">></h1>'],
 		});
-		jQuery.validator.setDefaults({
-			debug: true,
-			success: "valid"
-		});
-		$( "#myform" ).validate({
-			rules: {
-				name: {
-					required: true,
+		$(document).ready(function () {
+			$( "#myform" ).validate({
+				rules: {
+					name: {
+						required: true,
+					},
+					cont: {
+						required: true,
+						number:true,
+						minlength: 10,
+						maxlength: 10,
+					},
+					email: {
+						required: true,
+						email: true,
+					},
+					age: {
+						required: true,
+						min: 18,
+					},
+					date: {
+						required: true,
+						maxDate: true,
+					}
 				},
-				cont: {
-					required: true,
-					minlength: 10,
-					maxlength: 10,
-				},
-				email: {
-					required: true,
-				},
-				age: {
-					required: true,
-					min: 18,
-				},
-				date: {
-					required: true,
-					maxDate: true,
+				submitHandler: function(form) {
+					form.submit();
 				}
-			}
+			});
 		});
 		$.validator.addMethod("maxDate", function(value, element) {
 			var curDate = new Date();
-			console.log(Date.parse(curDate));
 		    var inputDate = new Date(value);
-		    console.log(Date.parse(inputDate));
-		    console.log(inputDate - curDate);
-		    console.log(172,800);
 		    if ((inputDate - curDate) < 172800000)
 				return true;
 			return false;
